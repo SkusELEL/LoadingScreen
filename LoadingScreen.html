@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Screen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="loading-container">
+    <video id="video-background" autoplay loop muted>
+      <source src='loadingintro.mp4' type="video/mp4">
+    </video>    
+    <img id="logo2" src="Logo.png" alt="Logo serwera2">
+    <img id="logo" class="pulsating" src="Logo.png" alt="Logo serwera">
+  </div>
+
+  <audio id="background-music" loop>
+    <source src="Music1.mp3" type="audio/mpeg">
+  </audio>
+
+  <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+
+  <script src="script.js"></script>
+</body>
+</html>
